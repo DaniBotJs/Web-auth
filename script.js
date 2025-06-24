@@ -1,5 +1,5 @@
-const API_BASE_URL = 'https://your-api-url.vercel.app'; // Ganti dengan URL API Anda
-let apiKey = localStorage.getItem('apiKey') || '';
+const API_BASE_URL = 'https://web-auth-nz74yizzl-danis-projects-3f247b67.vercel.app'; // Ganti dengan URL API Anda
+let apiKey = "Dani***Sigma";
 
 // DOM Elements
 const apiKeyInput = document.getElementById('apiKey');
