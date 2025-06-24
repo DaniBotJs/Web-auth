@@ -1,0 +1,139 @@
+:root {
+  --primary: #3498db;
+  --danger: #e74c3c;
+  --success: #2ecc71;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+.api-key-container {
+  display: flex;
+  gap: 10px;
+}
+
+#apiKey {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+  background: none;
+  color: var(--dark);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.controls {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+#logContent {
+  background: var(--dark);
+  color: var(--light);
+  padding: 15px;
+  border-radius: 4px;
+  max-height: 500px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
+#authContent {
+  width: 100%;
+  min-height: 300px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: monospace;
+  resize: vertical;
+}
+
+.status-bar {
+  margin-top: 20px;
+  padding: 10px;
+  background: #eee;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#clearLogs {
+  background-color: var(--danger);
+}
+
+#saveAuth {
+  background-color: var(--success);
+}
